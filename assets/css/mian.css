@@ -1,0 +1,800 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sec-space {
+  padding: 40px 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+.td-none {
+  text-decoration: none;
+}
+
+.l-none {
+  list-style-type: none;
+}
+
+.custom-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.b-none {
+  border: none;
+}
+
+:root {
+  --black: #262626;
+  --lightblack: #333333;
+  --green: #7dae40;
+  --blue: #0da1ff;
+  --white: #f3f3f3;
+}
+
+.b-btm {
+  border-bottom: 2px solid var(--blue) !important;
+}
+
+header .envato-navbar {
+  background-color: var(--black);
+}
+header .envato-navbar .envato-inner .evt {
+  color: var(--green);
+  font-size: x-large;
+}
+header .envato-navbar .envato-inner .btn {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: var(--green);
+}
+header .envato-navbar .envato-inner .modal .social li {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+header .envato-navbar .envato-inner .modal .social li a span:hover {
+  color: var(--black) !important;
+}
+header .envato-navbar .envato-inner .modal .social li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -23px;
+}
+header .envato-navbar .envato-inner .modal .social li .google i {
+  color: linear-gradient(0deg, red, yellow);
+}
+header .envato-navbar .envato-inner .modal .social li .facebook small {
+  background-color: var(--blue);
+  color: var(--white);
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 0px 4px;
+}
+header .envato-navbar .envato-inner .or {
+  position: relative;
+}
+header .envato-navbar .envato-inner .or:before {
+  content: "";
+  position: absolute;
+  top: 37px;
+  left: 0;
+  width: 19rem;
+  height: 1px;
+  background-color: rgb(206, 203, 203);
+}
+header .envato-navbar .envato-inner .or:after {
+  content: "";
+  position: absolute;
+  top: 37px;
+  right: 0;
+  width: 19rem;
+  height: 1px;
+  background-color: rgb(206, 203, 203);
+}
+
+.recaptcha {
+  border: 1px solid gray;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+}
+.recaptcha .recaptcha-inner {
+  padding-left: 5rem;
+}
+.recaptcha .recaptcha-inner p {
+  font-size: calc(0.4rem + 0.4vw);
+}
+
+.bill {
+  border: 1px solid gray;
+}
+
+.whistle-nav {
+  background-color: var(--lightblack);
+  position: relative;
+}
+.whistle-nav .whistle-wrapper .whistle-inner {
+  position: relative;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul li #box {
+  position: absolute;
+  top: 4rem;
+  width: -moz-max-content;
+  width: max-content;
+  right: 39rem;
+  z-index: 1 !important;
+  background-color: white !important;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box1 {
+  position: absolute;
+  top: 4rem;
+  right: -1.4rem;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1.5rem;
+  width: 52%;
+  z-index: 1;
+  background-color: white;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box1 h4 span {
+  border-bottom: 2px solid var(--blue) !important;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box1 h6 span {
+  font-size: calc(0.5rem + 0.5vw);
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box1 .image {
+  position: absolute;
+  right: 3rem;
+  z-index: -9999999;
+  top: 3rem;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box1 .btn {
+  border-radius: 0;
+  padding: 0.5rem 2rem;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box2 {
+  position: absolute;
+  top: 4rem;
+  right: 23rem;
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 1;
+  background-color: white;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box3 {
+  position: absolute;
+  top: 4rem;
+  left: 19rem;
+  width: 77%;
+  z-index: 1;
+  background-color: white;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box3 .blog span {
+  border-bottom: 2px solid var(--blue) !important;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box3 .blog span:hover {
+  color: var(--blue);
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box4 {
+  position: absolute;
+  top: 4rem;
+  left: 19rem;
+  width: 77%;
+  z-index: 1;
+  background-color: white;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box4 .blog span {
+  border-bottom: 2px solid var(--blue) !important;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box4 .blog span:hover {
+  color: var(--blue);
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box5 {
+  position: absolute;
+  top: 4rem;
+  left: 48rem;
+  width: 39%;
+  z-index: 1;
+  background-color: white;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box5 .blog span {
+  border-bottom: 2px solid var(--blue) !important;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box5 .blog span:hover {
+  color: var(--blue);
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box6 {
+  position: absolute;
+  top: 4rem;
+  left: 46rem;
+  width: 42%;
+  z-index: 1;
+  background-color: white;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box6 .blog span {
+  border-bottom: 2px solid var(--blue) !important;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box6 .blog span:hover {
+  color: var(--blue);
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box6 .changer {
+  background-image: url(/assets/img/skiing\ 1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box6 .changer a {
+  border: 1px solid transparent;
+  padding: 0.5rem 2rem;
+  background-color: var(--blue);
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box7 {
+  position: absolute;
+  top: 4rem;
+  left: 19rem;
+  width: 77%;
+  z-index: 1;
+  background-color: white;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box7 .blog span {
+  border-bottom: 2px solid var(--blue) !important;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul #box7 .blog span:hover {
+  color: var(--blue);
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul .hidden {
+  display: none;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul li a {
+  font-size: calc(0.4rem + 0.5vw);
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul li a:hover {
+  color: var(--blue) !important;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul li a.active {
+  color: var(--blue) !important;
+}
+.whistle-nav .whistle-wrapper .whistle-inner ul .cart .rounded-pill {
+  top: -5px !important;
+  border-radius: 0 !important;
+  background-color: var(--blue) !important;
+  left: 16px !important;
+}
+.whistle-nav .whistle-wrapper .whistle-inner .whistle span {
+  color: var(--blue);
+}
+
+/*************************************************************/
+/*************************************************************/
+.carosuel-wrapper .carousel-dark .carousel-indicators [data-bs-target] {
+  border: 3px solid var(--white);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.carosuel-wrapper .carousel-inner .carousel-caption {
+  left: 9%;
+  top: 5rem;
+}
+.carosuel-wrapper .carousel-inner .carousel-caption h5 span {
+  border-bottom: 2px solid var(--white) !important;
+}
+.carosuel-wrapper .carousel-inner .carousel-caption h2 {
+  font-size: 5rem;
+}
+.carosuel-wrapper .carousel-inner .carousel-caption h2 .pro {
+  border-bottom: 4px solid var(--black) !important;
+}
+.carosuel-wrapper .carousel-inner .carousel-caption h3 {
+  font-size: 3.5rem;
+}
+.carosuel-wrapper .carousel-inner .carousel-caption h3 span {
+  border-bottom: 4px solid var(--black) !important;
+}
+.carosuel-wrapper .carousel-inner .experts {
+  left: 60%;
+  top: 5rem;
+}
+.carosuel-wrapper .carousel-control-prev {
+  left: -40px;
+}
+.carosuel-wrapper .carousel-dark .carousel-control-next-icon,
+.carosuel-wrapper .carousel-dark .carousel-control-prev-icon {
+  filter: none;
+}
+
+/*************************************************************/
+/*************************************************************/
+.card-wrapper .row .game {
+  cursor: pointer;
+}
+.card-wrapper .row .game img {
+  width: 100%;
+}
+.card-wrapper .row .game .icons {
+  position: absolute;
+  top: 29%;
+  left: 58px;
+  overflow: hidden;
+}
+.card-wrapper .row .game .icons i {
+  font-size: calc(3rem + 2vw) !important;
+}
+.card-wrapper .row .game .icons .bicycle i {
+  bottom: 0;
+  left: 0;
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+.card-wrapper .row .game .icons .bicycle i:hover {
+  transform: translateY(-100%);
+}
+.card-wrapper .row .game .icons h6 {
+  top: 0;
+  left: 0;
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+.card-wrapper .row .game .icons h6:hover {
+  transform: translateY(100%);
+}
+.card-wrapper .row .game .image-inner {
+  position: relative;
+  display: inline-block;
+  background-color: rgb(0, 0, 0);
+}
+.card-wrapper .row .game .image-inner img {
+  opacity: 0.5;
+}
+.card-wrapper .row .game .image-inner:hover img {
+  opacity: 1;
+}
+.card-wrapper .row .golf {
+  left: 19rem !important;
+}
+.card-wrapper .row .swim {
+  left: 32rem !important;
+}
+.card-wrapper .row .tenis {
+  left: 46rem !important;
+}
+.card-wrapper .row .track {
+  left: 59rem !important;
+}
+.card-wrapper .row .weight {
+  left: 73rem !important;
+}
+
+/*************************************************************/
+/*************************************************************/
+.subscription-card-wrapper .row .coach {
+  border: 1px solid rgb(206, 203, 203);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.subscription-card-wrapper .row .coach:hover {
+  border: 3px solid black;
+  /* Increase border width on hover */
+}
+
+.subscription-card-wrapper .row .coach img {
+  width: 100%;
+}
+
+.subscription-card-wrapper .row .coach .table {
+  border: 1px solid transparent;
+  /* Start with a transparent border */
+  transition: all 0.3s ease-in-out;
+}
+
+.subscription-card-wrapper .row .coach:hover .table {
+  border: 3px solid black;
+  /* Make table border prominent on card hover */
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+/*************************************************************/
+/*************************************************************/
+.trail-wrapper {
+  background-image: url(../img/bike\ trail\ 1.jpg);
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.trail-wrapper .trail-inner .col-md-7 {
+  background-color: rgba(62, 62, 206, 0.7);
+  height: 500px;
+}
+.trail-wrapper .trail-inner .col-md-7 .sports-descrptn-wrapper .sports-descrptn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.trail-wrapper .trail-inner .col-md-7 .sports-descrptn-wrapper .sports-descrptn .descrptn-inner .ball {
+  width: 60px;
+  height: 60px;
+  background-color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+.trail-wrapper .trail-inner .col-md-7 .sports-descrptn-wrapper .sports-descrptn .descrptn-inner .ball:hover {
+  background-color: gray;
+  color: var(--white);
+}
+.trail-wrapper .trail-inner .col-md-7 .sports-descrptn-wrapper .sports-descrptn .descrptn-inner .ball i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(1rem);
+  font-size: 1.5rem;
+}
+.trail-wrapper .trail-inner .col-md-7 h2 .fea {
+  border-bottom: 3px solid white;
+}
+.trail-wrapper .trail-inner .col-md-7 h2 .web {
+  border: none;
+}
+.trail-wrapper .trail-inner .col-md-7 .btn {
+  border: 1px solid white;
+  border-radius: 0;
+  padding: 0.8rem 2rem;
+}
+.trail-wrapper .trail-inner .col-md-7 .btn:hover {
+  background-color: var(--white);
+  color: var(--black) !important;
+}
+
+/*************************************************************/
+/*************************************************************/
+.employee-wrapper {
+  background-image: url(../img/background\ blur\ image\ 1.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+.employee-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+}
+.employee-wrapper .overlay .row .triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 36px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 30px solid #fefefe;
+  position: absolute;
+  bottom: 255px;
+  left: 30rem;
+}
+.employee-wrapper .overlay .row .triangle-down2 {
+  width: 0;
+  height: 0;
+  border-left: 36px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 30px solid #fefefe;
+  position: absolute;
+  bottom: 255px;
+  right: 16rem;
+}
+.employee-wrapper .overlay .row img {
+  border: 6px solid white;
+}
+
+/*************************************************************/
+/*************************************************************/
+.nav-pills .nav-link, .nav-pills .show > .nav-link {
+  color: black !important;
+  background-color: white !important;
+}
+
+.nav-pills .nav-link.active {
+  border-bottom: 1px solid black;
+  border-radius: 0 !important;
+}
+
+.nav-pills .nav-link:hover {
+  border-bottom: 1px solid black;
+  color: var(--black) !important;
+  font-weight: bold;
+}
+
+.nav-wrapper .tab-content .tab-pane .latest img {
+  width: 100%;
+}
+
+/*************************************************************/
+/*************************************************************/
+.description-cards-wrapper {
+  background-color: var(--blue);
+}
+.description-cards-wrapper .card {
+  border-radius: 0;
+}
+
+/*************************************************************/
+/*************************************************************/
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  display: none;
+}
+
+/*************************************************************/
+/*************************************************************/
+.bottom-nav-wrapper .socal ul li a {
+  border: 1px solid transparent !important;
+  background-color: rgb(31, 28, 28) !important;
+  padding: 1rem !important;
+}
+.bottom-nav-wrapper .use h5 span {
+  border-bottom: 2px solid white;
+}
+
+@media (max-width: 1200px) {
+  .card-wrapper .row .golf {
+    left: 17.5rem !important;
+  }
+  .card-wrapper .row .swim {
+    left: 29rem !important;
+  }
+  .card-wrapper .row .tenis {
+    left: 42rem !important;
+  }
+  .card-wrapper .row .track {
+    left: 52rem !important;
+  }
+  .card-wrapper .row .weight {
+    left: 64rem !important;
+  }
+}
+@media (max-width: 992px) {
+  .whistle-nav .whistle-wrapper .whistle-inner ul li {
+    padding: 0.5rem !important;
+  }
+  .carosuel-wrapper .carousel-inner .carousel-caption h2 {
+    font-size: 3.5rem;
+  }
+  .carosuel-wrapper .carousel-inner .carousel-caption h3 {
+    font-size: 2.5rem;
+  }
+  .carosuel-wrapper .carousel-inner .carousel-caption p {
+    font-size: small !important;
+  }
+  .card-wrapper .row .col-md-2 .icons {
+    left: 38px;
+  }
+  .card-wrapper .row .golf {
+    left: 14.5rem !important;
+  }
+  .card-wrapper .row .swim {
+    left: 23rem !important;
+  }
+  .card-wrapper .row .tenis {
+    left: 34.5rem !important;
+  }
+  .card-wrapper .row .track {
+    left: 43rem !important;
+  }
+  .card-wrapper .row .weight {
+    left: 52.5rem !important;
+  }
+  .subscription-card-wrapper .row .track {
+    padding-top: 1rem;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .whistle-nav .whistle-wrapper .whistle-inner .whistle-product {
+    position: absolute;
+    top: 1rem;
+    left: 42%;
+  }
+  .whistle-nav .whistle-wrapper .whistle-inner .whistle-product .message {
+    display: block !important;
+  }
+  .whistle-nav .whistle-wrapper .whistle-inner .whistle-product .message .fa {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+  }
+  .whistle-nav .whistle-wrapper .whistle-inner .whistle-product .message .rounded-pill {
+    border-radius: 0 !important;
+    top: 11px !important;
+    left: 91px !important;
+    background-color: var(--blue) !important;
+  }
+  .whistle-nav .whistle-wrapper .whistle-inner ul li .cart {
+    display: none;
+  }
+  .whistle-nav .whistle-wrapper .whistle-inner .dscrp {
+    display: none;
+  }
+  .whistle-nav .whistle-wrapper .nav-wrapper {
+    display: block !important;
+    margin-top: 6rem;
+  }
+  .whistle-nav .whistle-wrapper .nav-wrapper .menu {
+    background-color: var(--blue);
+    margin-top: 1rem;
+  }
+  .whistle-nav .whistle-wrapper .nav-wrapper .act li a {
+    font-size: small;
+  }
+  .whistle-nav .whistle-wrapper .nav-wrapper .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+  .whistle-nav .whistle-wrapper .nav-wrapper .accordion-item .accordion-body a:hover {
+    color: var(--blue) !important;
+  }
+  .whistle-nav .whistle-wrapper .nav-wrapper .accordion-item .accordion-button:not(.collapsed)::after {
+    background-image: none;
+  }
+  .whistle-nav .whistle-wrapper .nav-wrapper .accordion-item .accordion-button::after {
+    background-image: none;
+  }
+  .carosuel-wrapper .carousel-inner .carousel-caption {
+    display: block !important;
+  }
+  .carosuel-wrapper .carousel-inner .carousel-caption h5 {
+    font-size: 1rem;
+  }
+  .carosuel-wrapper .carousel-inner .carousel-caption h2 {
+    font-size: 2rem;
+  }
+  .carosuel-wrapper .carousel-inner .carousel-caption h3 {
+    font-size: 1.5rem;
+  }
+  .card-wrapper .fitnes {
+    text-align: center;
+  }
+  .card-wrapper .fitnes .game {
+    padding: 0.5rem !important;
+  }
+  .card-wrapper .row .col-md-2 .icons {
+    top: 4rem;
+  }
+  .card-wrapper .row .col-md-2 .hill {
+    left: 5rem;
+  }
+  .card-wrapper .row .golf {
+    left: 22rem !important;
+  }
+  .card-wrapper .row .swim {
+    left: 37rem !important;
+  }
+  .card-wrapper .row .tenis {
+    left: 6rem !important;
+    top: 17rem !important;
+    z-index: 1;
+  }
+  .card-wrapper .row .track {
+    z-index: 1;
+    left: 19rem !important;
+    top: 17rem !important;
+  }
+  .card-wrapper .row .weight {
+    top: 17rem !important;
+    z-index: 1;
+    left: 35rem !important;
+  }
+  .subscription-card-wrapper .row .train {
+    padding-top: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .whistle-nav .whistle-wrapper .whistle-inner .whistle-product .message .fa {
+    left: 42% !important;
+  }
+  .whistle-nav .whistle-wrapper .whistle-inner .whistle-product .message .rounded-pill {
+    left: 72px !important;
+  }
+  .whistle-nav .whistle-wrapper .whistle-inner .whistle-product {
+    left: 33%;
+  }
+  .carosuel-wrapper .carousel-inner .carousel-caption {
+    top: 0rem;
+  }
+  .carosuel-wrapper .carousel-inner .carousel-caption h5 {
+    font-size: 0.5rem;
+  }
+  .carosuel-wrapper .carousel-inner .carousel-caption h2 {
+    font-size: 1rem;
+  }
+  .carosuel-wrapper .carousel-inner .carousel-caption p {
+    font-size: xx-small !important;
+  }
+  .carosuel-wrapper .carousel-inner .carousel-caption h3 {
+    font-size: 0.8rem;
+  }
+  .carosuel-wrapper .carousel-inner .experts {
+    left: 53%;
+  }
+  .carosuel-wrapper .carousel-inner .experts p {
+    padding-top: 0 !important;
+  }
+  .card-wrapper .row .col-md-2 .hill {
+    display: none;
+  }
+  .card-wrapper .row .golf {
+    display: none;
+  }
+  .card-wrapper .row .swim {
+    display: none;
+  }
+  .card-wrapper .row .tenis {
+    display: none;
+  }
+  .card-wrapper .row .track {
+    display: none;
+  }
+  .card-wrapper .row .weight {
+    display: none;
+  }
+  .sub-cards {
+    padding-bottom: 0;
+  }
+  .trail-wrapper .trail-inner .row h2 {
+    margin: 36px !important;
+  }
+  .trail-wrapper .trail-inner .row h2 .fea {
+    border-bottom: none;
+  }
+  .trail-wrapper .trail-inner .row h2 .web {
+    border-bottom: 3px solid white;
+  }
+  .trail-wrapper .trail-inner .row .sports-descrptn {
+    flex-direction: column;
+    align-items: flex-start !important;
+    margin-left: 2rem;
+  }
+  .trail-wrapper .trail-inner .row .sports-descrptn .descrptn-inner a {
+    font-size: small !important;
+  }
+}/*# sourceMappingURL=mian.css.map */
